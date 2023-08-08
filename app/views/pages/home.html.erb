@@ -1,0 +1,6 @@
+<% if Time.now.hour < 12 %>
+  <h1>Good morning!</h1>
+<% else %>
+  <h1>Good afternoon!</h1>
+<% end %>
+<p>The current time is <%= Time.now.hour %> hours and <%= Time.now.min %> minutes</p>

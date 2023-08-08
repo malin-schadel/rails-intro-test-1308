@@ -1,0 +1,16 @@
+<h1>Contact</h1>
+
+<form action="/contact" method="get">
+  <input type="text" name="first_name" value="<%= params['first_name'] %>" placeholder="Enter a first name...">
+  <input type="text" name="last_name" value="<%= params['last_name'] %>" placeholder="Enter a last name...">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @staff.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'home', root_path %>
+<%= link_to 'about', about_path %>
